@@ -1,7 +1,8 @@
 const path = require("path");
 const express = require('express');
 const app = express();
-PORT = 4000;
+const PORT = process.env.PORT || 4000;
+
 app.use(express.static(__dirname));
 
 app.get('/', function (req, res) {

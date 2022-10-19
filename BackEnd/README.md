@@ -23,3 +23,6 @@
 
 ## To run the frontend, open another terminal and change to the frontend and type nodemon index.js
 
+## The end point of backend on heroku https://lab3-back-end.herokuapp.com/books
+
+## The end point of frontend on heroku https://lab3-front-end.herokuapp.com/

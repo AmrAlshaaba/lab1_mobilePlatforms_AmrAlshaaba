@@ -2,7 +2,7 @@ let html = ''
 const getBooks = async () => {
   const cards = document.getElementById('books')
   console.log(cards)
-  let books = await (await fetch('http://localhost:3000/books')).json();
+  let books = await (await fetch('https://lab3-back-end.herokuapp.com/books')).json();
   console.log("Hello im here");
   console.log(books)
   html += '<table class="table-primary table-bordered m-3 p-4"><thead class="table-secondary"><tr><th>Name</th><th>Author</th><th>Date</th><th>Genre</th></tr></thead><tbody>'

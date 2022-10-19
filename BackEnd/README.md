@@ -1,4 +1,4 @@
-## lab1 mobile platforms
+# lab1 mobile platforms
 
 ### To run the website type: nodemon index.js or node index.js
 
@@ -17,3 +17,9 @@
 
 ## GitHub link
 ### https://github.com/AmrAlshaaba/lab1_mobilePlatforms_AmrAlshaaba.git
+
+
+# Lab_3, adding frontend to the previous work, and deploy the application on HEROKU.
+
+## To run the frontend, open another terminal and change to the frontend and type nodemon index.js
+

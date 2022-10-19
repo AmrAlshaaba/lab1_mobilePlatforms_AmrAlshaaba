@@ -17,6 +17,9 @@ const { ObjectId } = require('mongodb');
 const app = express()
 const port = process.env.PORT || 3000;
 const path = require('path')
+var cors = require('cors');
+
+app.use(cors());
 
 const { connectToDb, getDb } = require('./db')
 let db
@@ -31,8 +34,10 @@ connectToDb((err) => {
   }
 })
 
+app.use(express.static('./FrontEnd'))
+
 app.get('/homepage', (req, res) => {
-  res.sendFile(path.join(__dirname, '/index.html'))
+  res.json("Welcome to BookStore")
 })
 
 app.get('/books', (req, res) => {
